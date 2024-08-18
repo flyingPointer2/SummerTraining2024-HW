@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Overview - My Blog</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li class="dropdown">
+                    <a href="#">Articles</a>
+                    <ul class="dropdown-content">
+                        <li><a href="article1.html">Understanding HTML5</a></li>
+                        <li><a href="article2.html">Introduction to CSS</a></li>
+                        <li><a href="article3.html">Getting Started with C++</a></li>
+                        <li><a href="article4.html">Python for Beginners</a></li>
+                        <li><a href="article5.html">Java Overview</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+    <aside>
+        <h2>Table of Contents</h2>
+        <ul>
+            <li><a href="#section1">Introduction to Java</a></li>
+            <li><a href="#section2">Java Syntax and Features</a></li>
+        </ul>
+    </aside>
+    
+    <main>
+        <article>
+            <h1 id="section1">Introduction to Java</h1>
+            <p>Java is a high-level, class-based, object-oriented programming language that is designed to have as few implementation dependencies as possible. It was originally developed by James Gosling at Sun Microsystems and released in 1995. Java applications are typically compiled to bytecode that can run on any Java Virtual Machine (JVM) regardless of the underlying computer architecture.</p>
+            
+            <h1 id="section2">Java Syntax and Features</h1>
+            <p>Java is known for its portability, which means that programs written in Java can run on any device that supports the Java Runtime Environment (JRE). Java syntax is similar to C++, but it is strictly object-oriented and has a simpler memory model.</p>
+            
+            <p>Java syntax is similar to C and C++ but has its own distinct features. Here are the fundamental elements:</p>
+            <ul>
+                <li><strong>Comments:</strong> Java supports single-line (//) and multi-line (/* ... */) comments.</li>
+                <li><strong>Keywords:</strong> Java has 53 reserved keywords that are the building blocks of the language.</li>
+                <li><strong>Identifiers:</strong> Variables, methods, and classes are named using identifiers, which follow specific naming conventions.</li>
+                <li><strong>Data Types:</strong> Java is strongly typed, with primitive types like int, double, and boolean, as well as reference types.</li>
+                <li><strong>Statements:</strong> Java uses curly braces {} to define the scope of code blocks.</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Object-Oriented Features</h2>
+            <p>Java's object-oriented nature is one of its core strengths, providing features such as:</p>
+            <ul>
+                <li><strong>Encapsulation:</strong> Bundling data with methods that can manipulate that data.</li>
+                <li><strong>Inheritance:</strong> The ability of a class to inherit properties and behaviors from another class.</li>
+                <li><strong>Polymorphism:</strong> The ability of objects to take on many forms, allowing for more flexible and dynamic code.</li>
+                <li><strong>Abstraction:</strong> Hiding complex realities while exposing only the necessary parts.</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Java Collections Framework</h2>
+            <p>The Java Collections Framework is a unified architecture for the object grouping classes. It provides interfaces and classes for various data structures:</p>
+            <ul>
+                <li><strong>Lists:</strong> Ordered collections (e.g., ArrayList, LinkedList).</li>
+                <li><strong>Sets:</strong> Unordered collections with no duplicate elements (e.g., HashSet, TreeSet).</li>
+                <li><strong>Maps:</strong> Key-value pair mappings (e.g., HashMap, TreeMap).</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Exception Handling</h2>
+            <p>Java has a robust exception handling mechanism that allows developers to manage runtime errors effectively:</p>
+            <ul>
+                <li><strong>Try:</strong> The block of code that might throw an exception.</li>
+                <li><strong>Catch:</strong> The block that catches and handles the exception.</li>
+                <li><strong>Finally:</strong> The optional block that is always executed, regardless of an exception.</li>
+                <li><strong>Throws:</strong> Indicates that a method might throw an exception.</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Java Platform Module System</h2>
+            <p>Introduced in Java 9, the Java Platform Module System (JPMS) allows for better encapsulation of code:</p>
+            <ul>
+                <li><strong>Modules:</strong> A named, self-describing unit of Java code that encapsulates its API.</li>
+                <li><strong>Exports:</strong> Making a package available to other modules.</li>
+                <li><strong>Requires:</strong> A module's dependency on another module's packages.</li>
+            </ul>
+        </section>
+            
+        </article>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Flying Pointer. All rights reserved.</p>
+    </footer>
+</body>
+</html>

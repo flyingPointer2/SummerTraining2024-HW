@@ -1,0 +1,205 @@
+/* Global Styles */
+/* self defined font */
+@font-face {
+    font-family: "MyFont";
+    src: url('../fonts/SourceSerif4Caption-Light.ttf') format('truetype'); 
+    font-weight: normal; 
+    font-style: normal; 
+}
+
+@font-face {
+    font-family: "CodeFont";
+    src: url('../fonts/JetBrainsMono-Medium.ttf') format('truetype');
+}
+
+
+body {
+    font-family: "MyFont", sans-serif;  /* use self defined font */
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* code font */
+code {
+    font-family: "CodeFont", 'Courier New', Courier, monospace;
+}
+
+h1 {
+    font-size: 28px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+/* Header and Navigation */
+header {
+    background-color: rgba(75, 0, 130, 0.75); /* Dark purple with 80% opacity */
+    padding: 10px 0;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    font-size: 1.1em;  /* 加大字体 */
+    line-height: 2em;  /* 调整行高 */
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Main Content */
+main {
+    margin-top: 80px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 60px;
+}
+
+main section {
+    margin-left: auto;  /* 水平居中 */
+    margin-right: auto;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+/* Article Styles */
+article {
+    margin-left: 300px; /* Leave space for the table of contents */
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Aside (Table of Contents) */
+aside {
+    position: fixed;
+    top: 80px;
+    left: 20px;
+    width: 250px;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+aside ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+aside ul li {
+    margin: 10px 0;
+}
+
+aside ul li a {
+    color: #4b0082; /* Dark purple */
+    text-decoration: none;
+}
+
+aside ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background-color: #4b0082;
+    color: white;
+    text-align: center;
+    padding: 6px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* article list */
+.article-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.article-list li {
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.article-list li a {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #4b0082; /* Dark purple */
+    text-decoration: none;
+}
+
+.article-list li a:hover {
+    text-decoration: underline;
+}
+
+.article-list li p {
+    color: #555;
+    margin: 5px 0 0;
+}
+
+
+/* Ensure that the dropdown content is initially hidden */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 260px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content li {
+    padding: 8px 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.dropdown-content li a {
+    color: #333;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content li a:hover {
+    background-color: #f1f1f1;
+}
+
+/* Display the dropdown content when hovering over the dropdown */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Position the dropdown content relative to its parent */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+

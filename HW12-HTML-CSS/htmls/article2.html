@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction to CSS - My Blog</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li class="dropdown">
+                    <a href="#">Articles</a>
+                    <ul class="dropdown-content">
+                        <li><a href="article1.html">Understanding HTML5</a></li>
+                        <li><a href="article2.html">Introduction to CSS</a></li>
+                        <li><a href="article3.html">Getting Started with C++</a></li>
+                        <li><a href="article4.html">Python for Beginners</a></li>
+                        <li><a href="article5.html">Java Overview</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+    <aside>
+        <h2>Table of Contents</h2>
+        <ul>
+            <li><a href="#section1">What is CSS?</a></li>
+            <li><a href="#section2">CSS Syntax</a></li>
+            <li><a href="#image1">Figure 1: An example of CSS settings snapshot</a></li>
+        </ul>
+    </aside>
+    
+    <main>
+        <article>
+            <h1 id="section1">What is CSS?</h1>
+            <p>CSS (Cascading Style Sheets) is a stylesheet language used to describe the presentation of a document written in HTML or XML. CSS describes how elements should be rendered on screen, on paper, in speech, or on other media.</p>
+            
+            <h1 id="section2">CSS Syntax</h1>
+            <p>CSS is composed of selectors and declarations. The selector points to the HTML element you want to style. The declaration block contains one or more declarations separated by semicolons.</p>
+
+
+<section>
+    <h2>Selectors</h2>
+    <p>At its core, CSS syntax consists of rulesets. A ruleset is made up of a selector and a declaration block.</p>
+        <pre><code>/* Selector */
+element {
+    /* Declaration block */
+    property: value;
+}</code></pre>
+
+    <p>Selectors target the HTML elements you want to style. They can be element type, class, ID, or attribute based.</p>
+    <pre><code>/* Element type selector */
+p {
+    color: blue;
+}
+
+/* Class selector */
+.important-text {
+    font-weight: bold;
+}
+
+/* ID selector */
+#header {
+    background-color: #eee;
+}</code></pre>
+</section>
+
+<section>
+    <h2>Properties and Values</h2>
+    <p>Inside the declaration block, CSS properties define the style characteristics, and values are what those properties are set to.</p>
+    <pre><code>body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}</code></pre>
+</section>
+<section>
+    <h2>Inheritance</h2>
+    <p>CSS properties can be inherited from parent elements to their children, reducing redundancy in your stylesheets.</p>
+    <pre><code>/* Parent element */
+div {
+    font-size: 16px;
+}
+
+/* Child element inherits font size */
+div p {
+    color: grey;
+    /* Inherited font size */
+}</code></pre>
+</section>
+<section>
+    <h2>The Box Model</h2>
+    <p>Understanding the box model is fundamental to CSS. Every element is a box with content, padding, border, and margin areas.</p>
+    <pre><code>box {
+    width: 300px;
+    padding: 20px;
+    border: 5px solid #000;
+    margin: 10px;
+}</code></pre>
+</section>
+<section>
+    <h2>Pseudo-classes and Pseudo-elements</h2>
+    <p>Pseudo-classes and pseudo-elements add specific styles for different states or parts of an element.</p>
+    <pre><code>/* Pseudo-class for links */
+a:hover {
+    color: red;
+}
+
+/* Pseudo-element for first line of a paragraph */
+p::first-line {
+    font-weight: bold;
+}</code></pre>
+</section>
+<section>
+    <h2>Media Queries</h2>
+    <p>Media queries are essential for responsive design, allowing styles to adapt based on the device's characteristics.</p>
+    <pre><code>@media (max-width: 600px) {
+body {
+    background-color: lightblue;
+}
+}</code></pre>
+</section>
+<section>
+    <h2>CSS Comments</h2>
+    <p>Comments in CSS are used to explain code or temporarily remove code without deleting it.</p>
+    <pre><code>/* This is a single-line comment */
+/* 
+This is a multi-line comment
+*/
+
+body {
+/* Set default font and background */
+    font-family: sans-serif;
+    background-color: #fff;
+}</code></pre>
+</section>
+            
+<section>
+    An example of CSS settings is as follows:
+    <figure>
+        <img src="../images/css-setting-screenshot.jpg" width="75%" alt="Sample Image">
+        <figcaption id="image1">Figure 1: An example of CSS settings snapshot</figcaption>
+    </figure>
+</section>
+        </article>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Flying Pointer. All rights reserved.</p>
+    </footer>
+</body>
+</html>

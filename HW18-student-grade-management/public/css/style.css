@@ -1,0 +1,118 @@
+/* Body Content and General Settings */
+/* self-defined font */
+@font-face {
+    font-family: "BodyMainFont";
+    src: url('../fonts/LXGWWenKaiMonoGBScreen.ttf') format('truetype'); 
+    font-weight: normal; 
+    font-style: normal; 
+}
+
+body {
+    font-family: "BodyMainFont", sans-serif;  /* use self-defined font first */
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header Content */
+header {
+    background-color: rgba(75, 0, 130, 0.75); /* Dark purple with 80% opacity */
+    padding: 8px 0;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    color: #fff;
+}
+
+.headerTitle {
+    font-size: 28px;
+}
+
+
+h1 {
+    font-size: 28px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+p {
+    font-size: 18px;
+}
+
+
+/* Main Content */
+main {
+    margin-top: 80px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 60px;
+}
+
+main section {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Footer */
+footer {
+    background-color: #4b0082;
+    color: white;
+    text-align: center;
+    padding: 6px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Input Box */
+.input-container {
+    /* display: flex; */
+    align-items: center;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    font-size: 18px;
+}
+.input-container input {
+    flex-grow: 1;
+    margin-left: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 5px 10px;
+    border: 1px solid #626162;
+    border-radius: 5px;
+    transition: border-color 0.3s; /* 平滑过渡边框颜色变化 */
+    color: #3f3e3e;
+}
+.input-container input::placeholder {
+    color: #ccc; /* 提示文字颜色 */
+    font-size: 16px;
+    font-family: "BodyMainFont";
+}
+.input-container input:focus {
+    border-color: #a286c5; /* 鼠标点击时边框颜色 */
+}
+
+
+/* Button styles */
+.myButton {
+    font-size: 18px;
+    font-family: "BodyMainFont";
+    background-color: #55337e;
+    color: #fff;
+    padding: 5px;
+    margin: 6px;
+    border: 1px solid #626162;
+    border-radius: 10%;
+    cursor: pointer;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>学生成绩管理系统</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <div class="headerTitle">学生成绩管理系统</div>
+    </header>
+
+    <main>
+        <section>
+            <h2>录入学生成绩</h2>
+            <form class="input-container" id="student_input_form">
+                <span>姓名：</span> 
+                <input type="text" placeholder="请输入姓名" id="student_name">
+                <br><span>学号：</span>
+                <input type="number" placeholder="请输入学号" id="student_id_input">
+                <br><span>数学成绩：</span>
+                <input type="number" placeholder="请输入数学成绩" id="student_Math_score">
+                <br><span>英语成绩：</span>
+                <input type="number" placeholder="请输入英语成绩" id="student_English_score">
+                <br><span>语文成绩：</span>
+                <input type="number" placeholder="请输入语文成绩" id="student_Chinese_score">
+            </form>
+            <button class="myButton" id="inputScoresBtn">录入成绩</button>
+        </section>
+        <section>
+            <h2>学生成绩分析</h2>
+            <form class="input-container" id="scores_query_form">
+                <span>请输入学生的学号：</span>
+                <input type="number" placeholder="请输入学号" id="student_id_query">
+            </form>
+            <div>
+                <button class="myButton" id="queryScoresBtn">分析成绩</button>
+                <button class="myButton" id="exportScoresBtn">导出成绩</button>
+                <button class="myButton" id="clearAnalysisBtn">清除分析</button>
+            </div>
+        </section>
+        <section id="analysisResult">
+        </section>
+    </main>
+
+    <footer>
+        Copyright @ 2024
+    </footer>
+
+    <script src="js/inputAndAnalyzeStudentScores.js"></script>
+
+</body>
+</html>

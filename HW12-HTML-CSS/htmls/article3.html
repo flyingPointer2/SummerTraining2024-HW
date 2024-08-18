@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Getting Started with C++ - My Blog</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li class="dropdown">
+                    <a href="#">Articles</a>
+                    <ul class="dropdown-content">
+                        <li><a href="article1.html">Understanding HTML5</a></li>
+                        <li><a href="article2.html">Introduction to CSS</a></li>
+                        <li><a href="article3.html">Getting Started with C++</a></li>
+                        <li><a href="article4.html">Python for Beginners</a></li>
+                        <li><a href="article5.html">Java Overview</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+    <aside>
+        <h2>Table of Contents</h2>
+        <ul>
+            <li><a href="#section1">Introduction to C++</a></li>
+            <li><a href="#section2">Basic Syntax</a></li>
+        </ul>
+    </aside>
+    
+    <main>
+        <article>
+            <h1 id="section1">Introduction to C++</h1>
+            <p>C++ is a general-purpose programming language created by Bjarne Stroustrup as an extension of the C programming language. It has imperative, object-oriented, and generic programming features, while also providing facilities for low-level memory manipulation.</p>
+            
+            <h1 id="section2">Basic Syntax</h1>
+            <p>C++ syntax is similar to C, with the addition of object-oriented features such as classes and objects. It also supports multiple paradigms, including procedural, object-oriented, and functional programming.</p>
+            
+            <section>
+                <h2>Setup and Main Function</h2>
+                <p>Every C++ program starts with the inclusion of libraries, using the preprocessor directive #include. The entry point of every C++ program is the <code>main()</code> function, which must return an integer.</p>
+    <pre><code>
+#include &lt;iostream&gt;
+
+int main() {
+    // Your code here
+    std::cout << "Hello world!" << std::endl;
+    return 0;
+}
+    </code></pre>
+            </section>
+            <section>
+                <h2>Variable Declaration</h2>
+                <p>Variables in C++ must be declared before they are used, specifying their type. The scope of the variable is limited to the block in which it is defined.</p>
+<pre><code>
+int age = 25;
+double height = 5.5;</code></pre>
+            </section>
+            <section>
+                <h2>Data Types and Operators</h2>
+                <p>C++ supports a variety of data types including integers, floating points, characters, and more. Operators are used to perform operations and include arithmetic, relational, logical, and assignment operators.</p>
+                <pre><code>
+int x = 10;
+int y = 20;
+int sum = x + y;  // Arithmetic operator</code></pre>
+            </section>
+            <section>
+                <h2>Control Structures</h2>
+                <p>Control structures dictate the flow of a program. C++ provides if-else statements, switch-case, loops (for, while, do-while), and more.</p>
+                <pre><code>
+if (x > y) {
+    std::cout << "x is greater than y";
+} else {
+    std::cout << "x is less than or equal to y";
+}
+
+for (int i = 0; i < 10; ++i) {
+    std::cout << i << " ";
+}
+    </code></pre>
+            </section>
+            <section>
+                <h2>Functions</h2>
+                <p>Functions in C++ are blocks of code that perform a specific task. They can take inputs (parameters) and return outputs (return type).</p>
+                <pre><code>
+int add(int a, int b) {
+    return a + b;
+}
+
+int result = add(5, 10);</code></pre>
+            </section>
+            <section>
+                <h2>Arrays and Pointers</h2>
+                <p>C++ allows the use of arrays to store multiple values of the same type and pointers to store memory addresses of variables.</p>
+                <pre><code>
+int numbers[] = {1, 2, 3};
+int *ptr = numbers;  // Pointer to the first element of the array</code></pre>
+            </section>
+            <section>
+                <h2>Input and Output</h2>
+                <p>C++ provides the iostream library for input and output operations. The <code>std::cout</code> object is used for outputting data, while <code>std::cin</code> is used for input.</p>
+                <pre><code>
+std::cout << "Enter your name: ";
+std::string name;
+std::cin >> name;
+std::cout << "Hello, " << name << "!";</code></pre>
+            </section>
+        </article>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Flying Pointer. All rights reserved.</p>
+    </footer>
+</body>
+</html>

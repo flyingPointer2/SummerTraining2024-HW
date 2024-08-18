@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Understanding HTML5 - My Blog</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li class="dropdown">
+                    <a href="#">Articles</a>
+                    <ul class="dropdown-content">
+                        <li><a href="article1.html">Understanding HTML5</a></li>
+                        <li><a href="article2.html">Introduction to CSS</a></li>
+                        <li><a href="article3.html">Getting Started with C++</a></li>
+                        <li><a href="article4.html">Python for Beginners</a></li>
+                        <li><a href="article5.html">Java Overview</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+    <aside>
+        <h2>Table of Contents</h2>
+        <ul>
+            <li><a href="#section1">Introduction to HTML5</a></li>
+            <li><a href="#section2">Key Features</a></li>
+            <li><a href="#section3">An Example of HTML5 Page</a></li>
+            <!-- An Example of HTML5 Page -->
+            <li><a href="#image1">Figure 1: An example of an HTML5 page.</a></li>
+        </ul>
+    </aside>
+    
+    <main>
+        <article>
+            <h1 id="section1">Introduction to HTML5</h1>
+            <p>HTML5 is the latest evolution of the standard that defines HTML. It introduces new elements and attributes, reduces the need for external plugins, and improves the performance of web applications.</p>
+            
+            <h1 id="section2">Key Features</h1>
+            <h2>Semantic Elements</h2>
+        <p>HTML5 introduces new semantic elements that provide meaning to the web content. Elements like <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;article&gt;</code>, <code>&lt;footer&gt;</code>, and more, help define the structure of a webpage in a more meaningful way for both browsers and developers.</p>
+
+        <h2>Graphics and Multimedia</h2>
+        <p>With HTML5, creating and displaying multimedia content is more straightforward than ever. The <code>&lt;canvas&gt;</code> element allows for dynamic, scriptable rendering of 2D shapes and images, while the <code>&lt;video&gt;</code> and <code>&lt;audio&gt;</code> elements enable the embedding of video and audio content without the need for plugins.</p>
+
+        <h2>Form Improvements</h2>
+        <p>HTML5 enhances the form capabilities with new input types such as <code>email</code>, <code>url</code>, <code>number</code>, and <code>date</code>, making client-side validation more robust. It also introduces the <code>&lt;datalist&gt;</code> element for providing autocomplete capabilities.</p>
+
+        <h2>Offline and Storage</h2>
+        <p>The introduction of the Web Storage API in HTML5 allows for storing data on the client's browser locally, enabling offline web applications. The LocalStorage and SessionStorage offer ways to keep data persistent or temporary, respectively.</p>
+
+        <h2>Connectivity</h2>
+        <p>HTML5 brings new APIs that allow web pages to communicate with the server in the background, without needing to reload the web page. The WebSocket API provides a way to open a two-way interactive communication session between the user's browser and a server.</p>
+        
+        <h1 id="section3">An Example of HTML5 Page</h1>
+        <figure>
+            <img src="../images/Snipaste_html.jpg" width="75%" alt="Sample Image">
+            <figcaption id="image1">Figure 1: An example of an HTML5 page.</figcaption>
+        </figure>
+
+        </article>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Flying Pointer. All rights reserved.</p>
+    </footer>
+</body>
+</html>
