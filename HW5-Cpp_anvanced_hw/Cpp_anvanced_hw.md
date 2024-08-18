@@ -8,17 +8,17 @@
 
 1. 将 ./Homework/Part1 下的代码用 g++ 编译成可执行程序，命名为 `main.exe`。请在下面的代码框中写出需要用到的命令：
 
-   ```bash
+```bash
 g++ -o main.exe Fibo.cpp main.cpp
-   ```
+```
 
 2. 将 ./Homework/Part1 下的 Fibo.cpp 编译为静态库，命名为 `libfibo.a`，并将 `main.cpp` 通过库运行。请在下面的代码框中写出需要用到的命令：
 
-   ```bash
+```bash
 g++ -c Fibo.cpp -o Fibo.o
-   ar crv libfibo.a Fibo.o
-   g++ -static main.cpp -L . -lfibo -o main2
-   ```
+ar crv libfibo.a Fibo.o
+g++ -static main.cpp -L . -lfibo -o main2
+```
 
 ### 2. Makefile 与 CMake
 
